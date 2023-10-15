@@ -17,7 +17,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsup src/index.ts --cjsInterop --clean --dts --format esm,cjs",
-    "test": "uvu test .test.js$"
+    "test": "uvu test .test.mjs$"
   },
   "files": [
     "dist"
