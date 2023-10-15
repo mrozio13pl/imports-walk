@@ -2,22 +2,21 @@
   "name": "imports-walk",
   "version": "1.0.0",
   "description": "Find 'import' and 're-export' statements using babel parser.",
-  "main": "./dist/index.cjs",
-  "type": "module",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "repository": "mrozio13pl/imports-walk",
   "author": "mrozio13pl",
   "license": "MIT",
   "scripts": {
-    "build": "tsup src/index.ts --clean --dts --format esm,cjs",
+    "build": "tsup src/index.ts --cjsInterop --clean --dts --format esm,cjs",
     "test": "uvu test .test.js$"
   },
   "files": [

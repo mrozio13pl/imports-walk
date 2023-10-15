@@ -47,7 +47,7 @@ function findImports(node: Node, imports: string[] = []) {
  * importsWalk(source); // <= ['./module-a.js', './module-b.js', './module-c.js']
  * ```
  */
-export default function (src: string, options: ParserOptions = {}): string[] {
+export = function (src: string, options: ParserOptions = {}): string[] {
     const ast = parse(src, {
         sourceType: 'module',
         ...options
