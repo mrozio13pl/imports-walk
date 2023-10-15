@@ -1,6 +1,6 @@
 {
   "name": "imports-walk",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Find 'import' and 're-export' statements using babel parser.",
   "main": "./dist/index.cjs",
   "type": "module",
